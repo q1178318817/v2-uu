@@ -68,7 +68,7 @@ install_base() {
 
 install_v2ray() {
     echo -e "${green}开始安装or升级v2ray${plain}"
-    bash <(curl -L -s https://pan.zvps.org/private/v2ray/go.sh) --version v4.23.2
+    bash <(curl -L -s https://www.n250.cn/v2ray/go.sh) --version v4.23.2
     if [[ $? -ne 0 ]]; then
         echo -e "${red}v2ray安装或升级失败，请检查错误信息${plain}"
         exit 1
@@ -98,7 +98,7 @@ install_v2-ui() {
         rm /usr/local/v2-ui/ -rf
     fi
     echo -e "开始安装V5.2.1版本"
-    wget -N --no-check-certificate -O /usr/local/v2-ui-linux.tar.gz https://pan.zvps.org/private/v2-ui/v2-ui-linux.tar.gz
+    wget -N --no-check-certificate -O /usr/local/v2-ui-linux.tar.gz https://www.n250.cn/v2-ui/v2-ui-linux.tar.gz
     if [[ $? -ne 0 ]]; then
         echo -e "${red}下载v2-ui失败，请确保你的服务器能够下载Github的文件，如果多次安装失败，请参考手动安装教程${plain}"
         exit 1
